@@ -1,3 +1,7 @@
+*{
+    overflow-x: hidden;
+}
+
 .background{
     height: 100%;
     background-color: #00b4d8;
@@ -50,3 +54,25 @@ li{
    
 }
 
+.imageContainer{
+    height: 20rem;
+    width: 50vw;
+    /* border: 2px solid black; */
+    margin-left: 350px;
+    display: flex;
+    gap: .1rem;
+}
+
+.photos{
+    flex: 1;
+    height: 100%;
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.photos:hover{
+    flex: 5;
+    cursor: pointer;
+}
